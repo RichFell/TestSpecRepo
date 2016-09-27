@@ -20,6 +20,6 @@ other_ldflags           = '$(inherited) -lstdc++ -ObjC'
 s.ios.xcconfig          = {
 'OTHER_LDFLAGS' => other_ldflags
 }
-s.source_files          = 'AdobePlayerSDK/Classes/*.{h,m,swift}'
-#s.public_header_files = 'AdobePlayerSDK/Frameworks/PSDKLibrary.framework/Headers/*.h', 'AdobePlayerSDK/Frameworks/drmNativeInterface.framework/Headers/*.h'
+s.source_files          = 'AdobePlayerSDK/Classes/*.{h,m,swift}', 'AdobePlayerSDK/Frameworks/*.framework/Headers/*.h'
+s.public_header_files = 'AdobePlayerSDK/Frameworks/*.framework/Headers/*.h'
 end
